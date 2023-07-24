@@ -48,14 +48,12 @@ address {
   padding: 0 15px;
 }
 /* -------HEADER -----------*/
-header {
-  border-bottom: 1px solid var(--color-cornflower);
-  padding: 24px 0;
+header {  
 }
 .header-container {
- 
+  border-bottom: 1px solid var(--color-cornflower);
+  padding: 24px 0;
   display: flex;
-
 }
 .header-navi {
   display: flex;
@@ -167,6 +165,7 @@ header {
 .advantage-list {
   display: flex;
   gap: 24px;
+  width: calc((100%-72px)/4);
 }
 
 .visually-hidden {
@@ -181,7 +180,9 @@ header {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.advantage-iteam {
 
+}
 .advantage-subtitle {
   margin-bottom: 8px;
   color: var(--color-navy-blue);
@@ -189,7 +190,7 @@ header {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  width: calc((100%-72px)/4);
+ 
 }
 .advantage-text {
   font-size: 16px;
@@ -201,12 +202,13 @@ header {
 .working-list {
   display: flex;
   gap: 24px;
+  width:calc((100%-48px)/3);
 }
 .working {
   padding-bottom: 120px;
 }
 .working-iteam {
-  width: calc((100%-48px)/3);
+ 
 }
 .working-title {
   color: var(--color-navy-blue);
@@ -231,10 +233,11 @@ header {
 .team-list {
   display: flex;
   gap: 24px;
+  width: calc((100% - 72px)/4);
 }
 .team-iteam {
   background-color: var(--color-white);
-  width: calc((100% - 72px)/4);
+ 
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
@@ -356,7 +359,6 @@ header {
   border: 1px solid transparent;
 }
 .portfolio-iteam {
-  width: calc((100% - 48px)/3);
   border:1px solid var(--color-cornflower);
   border-top: none;
 }
@@ -364,6 +366,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  width: calc((100% - 48px)/3);
 }
 .portfolio-subtitle {
   color: var(--color-navy-blue);
