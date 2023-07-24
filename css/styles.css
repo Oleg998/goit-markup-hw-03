@@ -24,12 +24,6 @@ dd {
   margin: 0;
 }
 
-
-
-
-
-
-
 :root {
   --color-iris: rgba(77, 90, 229, 1);
   --color-ocean: rgba(64, 75, 191, 1);
@@ -176,7 +170,6 @@ address {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--color-ocean);
-  
 }
 /* -------Advantage------- */
 .advantage {
@@ -263,7 +256,6 @@ address {
   text-transform: capitalize;
 }
 
-
 .team-subtitle {
   color: var(--color-navy-blue);
   text-align: center;
@@ -271,7 +263,6 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
 }
 .team-text {
   text-align: center;
@@ -316,7 +307,6 @@ address {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  
 }
 /*----------- Portfolio header ----------*/
 
@@ -335,9 +325,8 @@ address {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.17;  
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  
 }
 
 /* -----------------------PORTFOLIO---------- */
@@ -349,10 +338,8 @@ address {
   display: flex;
   gap: 24px;
   justify-content: center;
- 
 }
-.filter-btn { 
-
+.filter-btn {
   border-radius: 4px;
   border: 1px solid var(--color-cornflower);
   cursor: pointer;
@@ -373,8 +360,8 @@ address {
   box-shadow: rgba(0, 0, 0, 0.12);
 }
 .portfolio-iteam {
-  width:calc((100% - 48)/3);
-  outline: 1px solid var(--color-cornflower); 
+  width: calc((100% - 48) / 3);
+  outline: 1px solid var(--color-cornflower);
   border-top: none;
 }
 .portfolio-img-list {
@@ -400,5 +387,5 @@ address {
   margin-bottom: 32px;
 }
 .porfolio-item-conteiner {
-padding: 32px 16px ;
+  padding: 32px 16px;
 }
