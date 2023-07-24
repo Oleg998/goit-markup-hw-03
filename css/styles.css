@@ -12,7 +12,7 @@
   --color-green: rgba(49, 208, 170, 1);
   --color-slate: rgba(67, 68, 85, 1);
   --color-light-slate: rgba(142, 143, 153, 1);
-  --color-cornflower: rgba(231, 233, 252, 1);
+  --color-cornflower: #e7e9fc;
   --color-cloud: rgba(244, 244, 253, 1);
   --color-navy-blue-modal: rgba(46, 47, 66, 0.4);
   --color-grey: rgba(46, 47, 66, 0.7);
@@ -44,23 +44,23 @@ address {
 .container {
   width: 1158px;
   max-width: 1440px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
   padding: 0 15px;
 }
 /* -------HEADER -----------*/
 header {
   border-bottom: 1px solid var(--color-cornflower);
+  padding: 24px 0;
 }
 .header-container {
-  padding-bottom: 24px;
-  padding-top: 24px;
+ 
   display: flex;
+
 }
 .header-navi {
   display: flex;
   align-items: center;
+  
 }
 
 .logo {
@@ -80,13 +80,14 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 176px;
+  margin-right: 76px;
+  
 }
 
 .header-menu-list {
   display: flex;
   gap: 40px;
-  margin-right: 76px;
+ 
 }
 
 .header-menu-link {
@@ -95,6 +96,7 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  
 }
 .header-menu-link:hover,
 .header-menu-link:focus,
@@ -187,12 +189,13 @@ header {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  width: calc((100%-72px)/4);
 }
 .advantage-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: calc((100%-72px) / 4);
+  
 }
 /* ----------------Working----------- */
 .working-list {
@@ -203,7 +206,7 @@ header {
   padding-bottom: 120px;
 }
 .working-iteam {
-  width: calc((100%-2 * 24px) / 3);
+  width: calc((100%-48px)/3);
 }
 .working-title {
   color: var(--color-navy-blue);
@@ -215,13 +218,15 @@ header {
   margin-bottom: 72px;
 }
 /* --------------TEAM-------- */
+.team-wrap {
+  background-color: var(--color-cloud);
+}
 .container-team {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .team {
-  background-color: var(--color-cloud);
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .team-list {
   display: flex;
@@ -229,7 +234,7 @@ header {
 }
 .team-iteam {
   background-color: var(--color-white);
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 72px)/4);
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
@@ -305,6 +310,7 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+ 
 }
 .heder-portfolio-logo-studio {
   color: var(--color-navy-blue);
@@ -340,6 +346,7 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 12px 24px;
+  
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -349,8 +356,8 @@ header {
   border: 1px solid transparent;
 }
 .portfolio-iteam {
-  width: calc((100% - 48px) / 3);
-  border: 1px solid var(--color-cornflower);
+  width: calc((100% - 48px)/3);
+  border:1px solid var(--color-cornflower);
   border-top: none;
 }
 .portfolio-img-list {
