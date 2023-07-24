@@ -7,7 +7,7 @@
 ul[class],
 ol[class] {
   padding: 0;
-  body,
+}
 h1,
 h2,
 h3,
@@ -48,6 +48,7 @@ dd {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -55,16 +56,36 @@ body {
   color: var(--color-slate);
 }
 address {
-  font-style: normal; 
+  font-style: normal;
 }
 
 .link {
   text-decoration: none;
+  display: block;
 }
 .list {
   list-style-type: none;
 }
+.container {
+  width: 1158px;
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /* -------HEADER -----------*/
+.header-container {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: flex;
+  border-bottom: 1px solid var(--color-cornflower);
+}
+.header-navi {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
 .logo {
   color: var(--color-navy-blue);
   font-family: "Raleway", sans-serif;
@@ -83,16 +104,30 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
 .header-menu-link {
   color: var(--color-navy-blue);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  }
-  .header-menu-link:hover, .header-menu-link:focus, .header-menu-link:active{
+}
+.header-menu-link:hover,
+.header-menu-link:focus,
+.header-menu-link:active {
   color: var(--color-ocean);
   text-decoration: underline;
+}
+.header-address {
+  margin-left: auto;
+}
+.header-address-list {
+  display: flex;
+  gap: 40px;
 }
 .header-address-link {
   color: inherit;
@@ -100,20 +135,28 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.header-address-link:hover, .header-address-link:focus, .header-address-link:active{
+.header-address-link:hover,
+.header-address-link:focus,
+.header-address-link:active {
   color: var(--color-ocean);
 }
 
 /*----------- HERO------------ */
 .hero {
   background-color: var(--color-navy-blue);
+  padding: 188px 472px;
+  /* padding-bottom: 120px; */
 }
+
 .hero-title {
+  margin: 0 auto;
+  max-width: 496px;
   color: var(--color-white);
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 .hero-button {
   cursor: pointer;
@@ -124,13 +167,34 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--color-ocean);
+  
 }
 /* -------Advantage------- */
+.advantage {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.advantage-list {
+  display: flex;
+  gap: 24px;
+}
+
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -148,12 +212,18 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: calc((100%-24px * 3) / 4);
 }
 /* ----------------Working----------- */
 .working-list {
-  display:flex;
-  align-items: flex-start;
-
+  display: flex;
+  gap: 24px;
+}
+.working {
+  padding-bottom: 116px;
+}
+.working-iteam {
+  width: calc((100%-2 * 24px) / 3);
 }
 .working-title {
   color: var(--color-navy-blue);
@@ -162,15 +232,29 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 /* --------------TEAM-------- */
+.container-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .team {
   background-color: var(--color-cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-iteam {
   background-color: var(--color-white);
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-title {
+  margin-bottom: 72px;
   color: var(--color-navy-blue);
   text-align: center;
   font-size: 36px;
@@ -179,6 +263,7 @@ address {
   text-transform: capitalize;
 }
 
+
 .team-subtitle {
   color: var(--color-navy-blue);
   text-align: center;
@@ -186,6 +271,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
 }
 .team-text {
   text-align: center;
@@ -196,6 +282,8 @@ address {
 /* ----------------------------FOOTER------------------ */
 .main-footer {
   background-color: var(--color-navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   text-transform: uppercase;
@@ -205,6 +293,8 @@ address {
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 18px;
 }
 .footer-logo-first {
   color: var(--color-cloud);
@@ -219,8 +309,17 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 100%;
+  max-width: 264px;
+}
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
 }
 /*----------- Portfolio header ----------*/
+
 .header-portfolio-logo {
   color: var(--color-iris);
   font-family: "Raleway", sans-serif;
@@ -236,13 +335,26 @@ address {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.17;
+  line-height: 1.17;  
   letter-spacing: 0.03em;
   
 }
 
 /* -----------------------PORTFOLIO---------- */
-.filter-btn {
+.portfolio-filter {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+ 
+}
+.filter-btn { 
+
+  border-radius: 4px;
+  border: 1px solid var(--color-cornflower);
   cursor: pointer;
   font-family: inherit;
   background-color: var(--color-cloud);
@@ -252,13 +364,25 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-bottom: 72px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--color-ocean);
   color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.12);
 }
-
+.portfolio-iteam {
+  width:calc((100% - 48)/3);
+  outline: 1px solid var(--color-cornflower); 
+  border-top: none;
+}
+.portfolio-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  padding-bottom: 120px;
+}
 .portfolio-subtitle {
   color: var(--color-navy-blue);
   font-size: 20px;
@@ -271,4 +395,10 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.portfolio-img {
+  margin-bottom: 32px;
+}
+.porfolio-item-conteiner {
+padding: 32px 16px ;
 }
