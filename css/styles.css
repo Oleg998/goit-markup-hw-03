@@ -42,23 +42,24 @@ address {
   list-style-type: none;
 }
 .container {
-  width: 1158px;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* -------HEADER -----------*/
-header {  
-}
-.header-container {
+.header {
   border-bottom: 1px solid var(--color-cornflower);
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.heder-container {
   display: flex;
 }
 .header-navi {
   display: flex;
   align-items: center;
-  
 }
 
 .logo {
@@ -79,13 +80,12 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  
+  display: block;
 }
 
 .header-menu-list {
   display: flex;
   gap: 40px;
- 
 }
 
 .header-menu-link {
@@ -94,7 +94,6 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
 }
 .header-menu-link:hover,
 .header-menu-link:focus,
@@ -165,7 +164,6 @@ header {
 .advantage-list {
   display: flex;
   gap: 24px;
-  width: calc((100%-72px)/4);
 }
 
 .visually-hidden {
@@ -181,7 +179,7 @@ header {
   overflow: hidden;
 }
 .advantage-iteam {
-
+  width: calc((100% - 72px) / 4);
 }
 .advantage-subtitle {
   margin-bottom: 8px;
@@ -190,25 +188,22 @@ header {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
- 
 }
 .advantage-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
 }
 /* ----------------Working----------- */
 .working-list {
   display: flex;
   gap: 24px;
-  width:calc((100%-48px)/3);
 }
 .working {
   padding-bottom: 120px;
 }
 .working-iteam {
- 
+  width: calc((100% - 48px) / 3);
 }
 .working-title {
   color: var(--color-navy-blue);
@@ -233,11 +228,11 @@ header {
 .team-list {
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px)/4);
 }
 .team-iteam {
+  width: calc((100% - 72px) / 4);
   background-color: var(--color-white);
- 
+
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
@@ -313,7 +308,6 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
- 
 }
 .heder-portfolio-logo-studio {
   color: var(--color-navy-blue);
@@ -349,7 +343,6 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 12px 24px;
-  
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -359,14 +352,14 @@ header {
   border: 1px solid transparent;
 }
 .portfolio-iteam {
-  border:1px solid var(--color-cornflower);
+  border: 1px solid var(--color-cornflower);
   border-top: none;
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-img-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  width: calc((100% - 48px)/3);
 }
 .portfolio-subtitle {
   color: var(--color-navy-blue);
@@ -387,4 +380,5 @@ header {
 }
 .porfolio-item-conteiner {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
